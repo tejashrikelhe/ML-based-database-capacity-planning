@@ -1,4 +1,4 @@
-# Design Decisions (1 page)
+# Design Decisions 
 
 ## Goal
 Predict baseline and peak compute needs for a heterogeneous database fleet while reducing overprovisioning and avoiding slowdowns.
