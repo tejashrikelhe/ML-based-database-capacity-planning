@@ -1,0 +1,29 @@
+project:
+  name: ml-db-capacity-planning
+  seed: 42
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  model_dir: models
+  reports_dir: reports
+
+feature_engineering:
+  window_minutes: 15
+  min_rows_per_db_window: 5
+
+clustering:
+  enabled: true
+  n_clusters: 6
+  random_state: 42
+
+modeling:
+  quantiles: [0.50, 0.95]
+  model_type: gbr_quantile
+  test_size_days: 14
+
+drift:
+  enabled: true
+  psi_threshold: 0.2
+  ks_pvalue_threshold: 0.01
+  check_interval_days: 7

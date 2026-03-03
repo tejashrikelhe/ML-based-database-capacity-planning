@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Data + artifacts
+data/raw/
+data/processed/
+models/
+reports/*.csv
+reports/predictions.csv
+reports/drift_report.csv
+
+# Keep plots + images for README
+!reports/plots/*.png
+!reports/shap/*.png
+assets/*.png
+assets/*.gif
